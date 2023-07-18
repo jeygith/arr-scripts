@@ -86,8 +86,8 @@ Configuration () {
 	log " May the beats be with you!"
 	log "-----------------------------------------------------------------------------"
 	log "Donate: https://github.com/sponsors/RandomNinjaAtk"
-	log "Project: https://github.com/RandomNinjaAtk/arr-scripts"
-	log "Support: https://github.com/RandomNinjaAtk/arr-scripts/discussions"
+	log "Project: https://github.com/jeygith/arr-scripts"
+	log "Support: https://github.com/jeygith/arr-scripts/discussions"
 	log "-----------------------------------------------------------------------------"
 	sleep 5
 	log ""

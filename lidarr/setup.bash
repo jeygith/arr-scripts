@@ -50,61 +50,61 @@ pip3 install -r ${SMA_PATH}/setup/requirements.txt
 
 mkdir -p /custom-services.d
 echo "Download QueueCleaner service..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/universal/services/QueueCleaner -o /custom-services.d/QueueCleaner
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/universal/services/QueueCleaner -o /custom-services.d/QueueCleaner
 echo "Done"
 
 echo "Download AutoConfig service..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/AutoConfig.service.bash -o /custom-services.d/AutoConfig
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/AutoConfig.service.bash -o /custom-services.d/AutoConfig
 echo "Done"
 
 echo "Download Video service..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/Video.service.bash -o /custom-services.d/Video
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/Video.service.bash -o /custom-services.d/Video
 echo "Done"
 
 echo "Download Audio service..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/Audio.service.bash -o /custom-services.d/Audio
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/Audio.service.bash -o /custom-services.d/Audio
 echo "Done"
 
 echo "Download AutoArtistAdder service..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/AutoArtistAdder.bash -o /custom-services.d/AutoArtistAdder
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/AutoArtistAdder.bash -o /custom-services.d/AutoArtistAdder
 echo "Done"
 
 echo "Download UnmappedFilesCleaner service..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/UnmappedFilesCleaner.bash -o /custom-services.d/UnmappedFilesCleaner
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/UnmappedFilesCleaner.bash -o /custom-services.d/UnmappedFilesCleaner
 echo "Done"
 
 mkdir -p /config/extended
 echo "Download PlexNotify script..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/PlexNotify.bash -o /config/extended/PlexNotify.bash 
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/PlexNotify.bash -o /config/extended/PlexNotify.bash 
 echo "Done"
 
 echo "Download MetadataPostProcess script..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/MetadataPostProcess.bash -o /config/extended/MetadataPostProcess.bash
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/MetadataPostProcess.bash -o /config/extended/MetadataPostProcess.bash
 echo "Done"
 
 echo "Download BeetsPostProcessor script..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/BeetsPostProcessor.bash -o /config/extended/BeetsPostProcessor.bash
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/BeetsPostProcessor.bash -o /config/extended/BeetsPostProcessor.bash
 echo "Done"
 
 echo "Download SMA config..."
-curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/sma.ini -o /config/extended/sma.ini 
+curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/sma.ini -o /config/extended/sma.ini 
 echo "Done"
 
 echo "Download Beets config..."
-curl "https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/beets-config.yaml" -o /config/extended/beets-config.yaml
+curl "https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/beets-config.yaml" -o /config/extended/beets-config.yaml
 echo "Done"
 
 echo "Download Deemix config..."
-curl "https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/deemix_config.json" -o /config/extended/deemix_config.json
+curl "https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/deemix_config.json" -o /config/extended/deemix_config.json
 echo "Done"
 
 echo "Download Tidal config..."
-curl "https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/tidal-dl.json" -o /config/extended/tidal-dl.json
+curl "https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/tidal-dl.json" -o /config/extended/tidal-dl.json
 echo "Done"
 
 if [ ! -f /config/extended.conf ]; then
 	echo "Download Extended config..."
-	curl https://raw.githubusercontent.com/RandomNinjaAtk/arr-scripts/main/lidarr/extended.conf -o /config/extended.conf
+	curl https://raw.githubusercontent.com/jeygith/arr-scripts/main/lidarr/extended.conf -o /config/extended.conf
 	chmod 777 /config/extended.conf
 	echo "Done"
 fi
